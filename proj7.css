@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 13px;
+    color: #fff;
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    position: relative;
+}
+.container {
+    max-width: 1110px;
+    height: 570px;
+}
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.part1 {
+    margin-right: 25px;
+}
+.cardspart1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+.cardspart2 {
+    display: flex;
+    flex-direction: row;
+}
+.card {
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+.card1 {
+    background-color: hsl(263, 55%, 52%);
+    width: 540px;
+    height: 275px;
+    margin-right: 25px;
+    position: relative;
+    z-index: 0;
+}
+.card1 .bgimg {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    z-index: 1;
+}
+.card2 {
+    background-color: hsl(217, 19%, 35%);
+    width: 250px;
+    height: 275px;
+}
+.card4 {
+    background-color:hsl(0, 0%, 100%);
+    width: 250px;
+    height: 275px;
+    color: hsl(217, 19%, 35%);
+    margin-right: 25px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card5 {
+    background-color: hsl(219, 29%, 14%);
+    width: 540px;
+    height: 275px;
+}
+.card3 {
+    background-color: hsl(0, 0%, 100%);
+    width: 250px;
+    height: 570px;
+    color: hsl(217, 19%, 35%);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.profil {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.profil .image img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+}
+.profil1 img {
+    border: 2px solid hsla(0, 0%, 100%, 0.8);
+}
+.mname {
+    font-weight: 600;
+    font-size: 14px;
+}
+.card1 .mainp1 p {
+    position: absolute;
+    left: 30px;
+    top: 74px;
+    right: 30px;
+    z-index: 2;
+}
+.paragraph1 p {
+    position: absolute;
+    left: 30px;
+    top: 163px;
+    right: 30px;
+    z-index: 2;
+}
+.ename {
+    font-weight: 500;
+    font-size: 12px;
+}
+.mname1,.mname2,.mname5 {
+    color: hsl(0, 0%, 100%);
+}
+.ename1,.ename2,.ename5 {
+    color: hsla(0, 0%, 100%,50%);
+}
+.mname4,.mname3 {
+    color: hsl(217, 19%, 35%);
+}
+.ename4,.ename3 {
+    color: hsla(217, 19%, 35%,50%);
+}
+.main {
+    font-size: 20px;
+    margin: 18px 0;
+}
+.paragraph {
+    margin-bottom: 20px;
+}
+.paragraph1,.paragraph2,.paragraph5 {
+    color: hsla(0, 0%, 100%,50%);
+}
+.paragraph3,.paragraph4 {
+    color: hsla(217, 19%, 35%,50%);
+}
+.profil5 img {
+    border: 2px solid hsl(263, 55%, 52%);
+}
+.profil3 img,.profil4 img {
+    border: 1px solid hsl(0, 0%, 100%);
+}
+footer {
+    color: black;
+    margin-top: 20px;
+    font-family: initial;
+    font-size: 14px;
+}
+@media (max-width: 900px) {
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 1966px;
+    }    
+    .container {
+        max-width: 320px;
+        max-height: 1820px;
+    }
+    .cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .card {
+        margin-bottom: 25px;
+
+    }
+    .part1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .cardspart1,.cardspart2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .part1 {
+        margin-right: 0;
+    }
+    .cardspart1 {
+        margin-bottom: 0;
+    }
+    .card1 {
+        height: 440px;
+        width: 320px;
+        position: relative;
+        z-index: 0;
+        margin-right: 0;
+    }
+    .card1 .bgimg {
+        position: absolute;
+        top: 0;
+        left: 195px;
+        z-index: 1;
+    }
+    .card1 .main p {
+        padding-right: 1px;
+    }
+    .card1 .paragraph1 p {
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        top: 235px;
+        padding-right: 13px;
+        
+    }
+    .cards .main p{
+        font-size: 20px;
+    }
+    .card2 {
+        width: 320px;
+        height: 240px;
+    }
+    .card4 {
+        width: 320px;
+        height: 230px;
+        margin: 0;
+        margin-bottom: 25px;
+    }
+    .card5 {
+        height: 380px;
+        width: 320px;
+    }
+    .card3 {
+        height: 435px;
+        width: 320px;
+    }
+    footer {
+        position: absolute;
+        bottom: 30px;
+    }
+}
